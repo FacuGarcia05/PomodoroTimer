@@ -91,9 +91,3 @@ This project was created as a web development practice project, focusing on:
 * JavaScript
 
 ---
-
-## Preview
-
-The screenshot below shows the interface of the Pomodoro Timer.
-
-![Pomodoro Timer Screenshot](./assets/pomodoro-preview.png)
