@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(179, 139, 139), red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4em 3em;
+}
+.title {
+  font-size: 3em;
+}
+hr {
+  width: 100%;
+  background-color: white;
+  height: 5px;
+  border-radius: 1em;
+  border: none;
+}
+.timer {
+  font-size: 10em;
+  font-weight: 700;
+  text-align: center;
+}
+.button-wrapper {
+  display: flex;
+  gap: 1em;
+}
+button {
+  font-size: 1.5em;
+  font-weight: 550;
+  letter-spacing: 1px;
+  padding: 0.5em 1.5em;
+  border-radius: 0.5em;
+  border: 0.5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+}
+.button-wrapper :hover {
+  transform: translateY(-10px);
+}
+#start {
+  background-color: rgb(46, 186, 49);
+}
+#stop {
+  background-color: rgb(215, 44, 44);
+}
+#reset {
+  background-color: rgb(46, 121, 186);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+#sub,
+#add {
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(222, 222, 222);
+  color: black;
+}
+
+.help-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+  z-index: 100;
+}
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.close-help {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+.lang-toggle {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.help-popup p {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}

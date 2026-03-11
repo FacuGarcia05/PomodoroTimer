@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- help button and hidden popup -->
+    <button id="help-btn" class="help-btn">¿?</button>
+    <div id="help-popup" class="help-popup" style="display: none">
+      <div class="help-header">
+        <button id="lang-toggle" class="lang-toggle">ES</button>
+        <button id="close-help" class="close-help">×</button>
+      </div>
+      <p id="help-text"></p>
+    </div>
+
+    <div class="container">
+      <h1 class="title">Pomodoro Timer</h1>
+      <p id="session">Session: 1</p>
+      <hr />
+      <div class="center">
+        <button id="sub">-5</button>
+        <p class="timer" id="timer">25:00</p>
+        <button id="add">+5</button>
+      </div>
+
+      <div class="button-wrapper">
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
